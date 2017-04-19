@@ -3,6 +3,8 @@ h1 {
     font-weight: bolder;
     letter-spacing: 25px;
     font-family: "Oswald", sans-serif;
+    min-width: 170px;
+	padding: 0 450px 0 0;
 }
 
 header {
@@ -19,6 +21,7 @@ header .bitumi-sigil-1 img {
 }
 
 header .header-content {
-    padding: 170px 0 150px;
+    padding: 170px 0 420px;
+	max-width: 460px;
 }
 
