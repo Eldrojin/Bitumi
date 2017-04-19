@@ -1,0 +1,24 @@
+h1 {
+    font-size: 120px;
+    font-weight: bolder;
+    letter-spacing: 25px;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    position: relative;
+    background-image: url("../img/Header Background.jpg");
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+}
+
+header .bitumi-sigil-1 img {
+    color: #001f51;
+    opacity: 80%;
+}
+
+header .header-content {
+    padding: 170px 0 150px;
+}
+
