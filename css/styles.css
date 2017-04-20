@@ -31,10 +31,31 @@ header {
 }
 
 header .bitumi-sigil-1 img {
-    padding: 0 0 200px 100px;
+    /*animation-timing-function: ease-out;*/
+    animation: movein 1s ease-out forwards;
+    animation: rotate .5s ease-in-out forwards;
+    padding: 0 0 0 850px;
 }
 
 header .header-content {
     padding: 60px 0 0 160px;
     max-width: 460px;
+}
+
+@keyframes movein {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
 }
