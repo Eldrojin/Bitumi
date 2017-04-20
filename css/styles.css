@@ -1,10 +1,15 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
-    font-size: 80px;
+    font-size: 130px;
     font-weight: bolder;
-    letter-spacing: 25px;
+    letter-spacing: 50px;
+    line-height: 130%;
     font-family: "Oswald", sans-serif;
-    min-width: 170px;
-    padding: 0 450px 0 0;
+    min-width: 180px;
+    padding: 0 460px 0 0;
 }
 
 header {
@@ -15,10 +20,10 @@ header {
 }
 
 header .bitumi-sigil-1 img {
-    padding: 0 0 0 300px;
+    padding: 0 0 200px 100px;
 }
 
 header .header-content {
-    padding: 170px 0 420px;
+    padding: 60px 0 0 160px;
     max-width: 460px;
 }
