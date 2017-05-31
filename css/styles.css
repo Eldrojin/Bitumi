@@ -1,10 +1,11 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("fonts/Google Fonts/Open_Sans/OpenSans-ExtraBold.ttf"), format("truetype");
-    
+    src: url("fonts/Google Fonts/Open_Sans/OpenSans-ExtraBold.ttf"), format("truetype"); 
 }
 
 body {
+    /*This property ensures hidden overflow only at the opening of browser
+    This means that we might need to make a query to always autmoatically hide the overflow*/
     overflow-x: hidden;
 }
 
@@ -28,13 +29,14 @@ header {
     /*background-image: (right, #000828, transparent);*/
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header .bitumi-sigil-1 img {
     /*animation-timing-function: ease-out;*/
-    animation: movein 1s ease-out forwards;
-    animation: rotate .5s ease-in-out forwards;
-    padding: 0 0 0 850px;
+    /*transform: rotate(-180deg);*/
+    padding: 0 0 0 250px;
+    animation: movein .5s ease-out forwards;
 }
 
 header .header-content {
@@ -44,16 +46,12 @@ header .header-content {
 
 @keyframes movein {
     0% {
-        transform: translateX(50px);
-    }
-    100% {
+        opacity: 0;
+    } 50% {
         transform: translateX(-100px);
     }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(180deg);
+    70% {
+        opacity: 1;
     }
     100% {
         transform: rotate(-180deg);
